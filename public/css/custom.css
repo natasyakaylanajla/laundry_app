@@ -1,0 +1,65 @@
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+
+.list-item + .list-item {
+    margin-top: 0.5rem;
+}
+
+.list-append,
+.list-prepend {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+.list-prepend {
+    margin-right: 0.5rem;
+}
+
+.list-append {
+    margin-left: 0.5rem;
+}
+
+.list-content {
+    flex: 1;
+}
+
+.list-title,
+.list-subtitle {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.125rem;
+}
+
+.list-title {
+    font-weight: 600;
+}
+
+.list-subtitle {
+    font-weight: 400;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-title {
+    flex: 1;
+}
+
+.input-group-append .btn {
+    height: calc(2.25rem + 2px);
+}
